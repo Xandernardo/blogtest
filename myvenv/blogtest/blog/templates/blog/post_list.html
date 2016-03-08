@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Django Mola</title>
+</head>
+<body>
+    <div>
+        <h1>Blog Djangero</h1>
+
+    </div>
+
+{% for pos in post %}
+    <div>
+        <p>Publicado: {{ pos.publish_date }}</p>
+        <h2><a>{{ pos.titulo }}</a></h2>
+        <p>{{ pos.contenido|linebreaks }}</p>
+    </div>
+{% endfor %}
+
+</body>
+</html>

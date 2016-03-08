@@ -1,4 +1,8 @@
 *.pyc
+include
+lib
+lib64
+Django
 __pycache__
 db.sqlite3
 .DS_Store
