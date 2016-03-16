@@ -7,6 +7,7 @@
             {{ pos.publish_date }}
         </div>
         <h2><b><a href="{% url 'blog.views.post_detail' pk=pos.pk %}">{{ pos.titulo }}</a></b></h2>
+        <a href="{% url 'blog.views.post_detail' pk=pos.pk %}">Comentarios: {{ pos.approved_comments.count }}</a>
         <p>{{ pos.contenido|linebreaks }}</p>
     </div>
 {% endfor %}
